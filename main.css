@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+.item-1{
+    background: url("./product-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-2{
+    background-color: red;
+}
+.item-3{
+    background-color: green;
+}
+.item-4{
+    background-color: yellow;
+}
+.item-5{
+    background-color: aqua;
+}
+.item-6{
+    background-color: purple;
+}
+.item-7{
+    background-color: grey;
+}
+.item-8{
+    background-color: coral
+}
+.item-9{
+    background-color: indianred;
+}
+.item-10{
+    background-color: darkred;
+}
+@media screen and (min-width:586px){
+
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "one one two three three"
+        "one one four five five"
+        "six seven seven five five"
+        "six eight nine nine ten"
+    }
+    .item-1{
+        grid-area: one;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./product-1.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 50px;
+    }
+    .item-2{
+        grid-area: two;
+        background-color: blue;
+    }
+    .item-3{
+        grid-area: three;
+        background-color: green;
+    }
+    .item-4{
+        grid-area: four;
+        background-color: yellow;
+    }
+    .item-5{
+        grid-area: five;
+        background-color: aqua;
+    }
+    .item-6{
+        grid-area: six;
+        background-color: purple;
+    }
+    .item-7{
+        grid-area: seven;
+        background-color: gray;
+    }
+    .item-8{
+        grid-area: eight;
+        background-color: coral;
+    }
+    .item-9{
+        grid-area: nine;
+        background-color: indianred;
+    }
+    .item-10{
+        grid-area: ten;
+        background-color: darkred;
+    }
+}
